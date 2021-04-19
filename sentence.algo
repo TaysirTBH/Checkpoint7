@@ -6,7 +6,7 @@ BEGIN
     Read(sentence);
     numc := Length('sentence');
     Write(numc);
-    FOR i FROM 0 TO numc STEP step  DO 
+    FOR i FROM 0 TO numc-1 STEP step  DO 
         IF (sentence[i]= " " OR sentence[i]="." ) THEN
             numw := numw+1;
         END_IF
