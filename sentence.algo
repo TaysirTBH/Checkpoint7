@@ -1,12 +1,12 @@
 ALGORITHM sentence_algo
 VAR
     sentence : STRING;
-    numc, numw, numv, i: INTEGER := 0;
+    numc, numw, numv: INTEGER := 0;
 BEGIN
     Read(sentence);
     numc := Length('sentence');
     Write(numc);
-    FOR i FROM 1 TO numc STEP step  DO 
+    FOR i FROM 0 TO numc STEP step  DO 
         IF (sentence[i]= " " OR sentence[i]="." ) THEN
             numw := numw+1;
         END_IF
